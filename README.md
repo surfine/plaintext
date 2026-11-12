@@ -44,4 +44,10 @@ dependencies. Tagged versions are built from this command.
 See [NOTICE](NOTICE). The novel touches on overwork, conflict between people,
 control and overstepping; it contains no self-harm.
 
+## Licence
+
+The code is under the MIT License. The script (`story/`) and the pictures
+(`img/`) are all rights reserved: read them and play, but do not reuse them.
+The full terms are in [LICENSE](LICENSE).
+
 中文说明见 [README.zh-CN.md](README.zh-CN.md)。

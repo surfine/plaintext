@@ -37,4 +37,8 @@ npm run build
 
 见 [NOTICE](NOTICE)。本作涉及过劳、人际冲突、控制与越界行为；不包含自伤内容。
 
+## 许可
+
+程序代码采用 MIT 许可。剧本（`story/`）与图片（`img/`）保留所有权利：可以阅读和游玩，不可挪用。完整条款见 [LICENSE](LICENSE)。
+
 English: [README.md](README.md).
