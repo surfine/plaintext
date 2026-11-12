@@ -1,0 +1,329 @@
+{
+  "id": "plaintext",
+  "version": "1.0.0",
+  "protocol": 1,
+  "kit": ">=1 <2",
+  "windows": [
+    {
+      "window": "mingwen",
+      "app": "mingwen",
+      "entry": "index.html",
+      "titleKey": "mingwen_title",
+      "windowClass": "mingwen-window openttd-window",
+      "paneClass": "mingwen-pane openttd-pane",
+      "frameClass": "openttd-frame",
+      "status": {
+        "loading": "mingwen_status_loading",
+        "failed": "mingwen_status_failed"
+      },
+      "capabilities": [
+        "state"
+      ],
+      "menus": [
+        {
+          "id": "file",
+          "labelKey": "menu_file",
+          "items": [
+            {
+              "type": "item",
+              "action": "mingwen-new",
+              "labelKey": "mingwen_menu_new",
+              "conditionId": "mingwen-new"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-continue",
+              "labelKey": "mingwen_menu_continue",
+              "conditionId": "mingwen-continue"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-load",
+              "labelKey": "mingwen_menu_load",
+              "conditionId": "mingwen-load"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-save",
+              "labelKey": "mingwen_menu_save",
+              "conditionId": "mingwen-save"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "close-active-window",
+              "labelKey": "close",
+              "shortcutId": "close-window",
+              "conditionId": "close-active-window"
+            }
+          ]
+        },
+        {
+          "id": "story",
+          "labelKey": "mingwen_menu_story",
+          "items": [
+            {
+              "type": "item",
+              "action": "mingwen-chapters",
+              "labelKey": "mingwen_menu_chapters",
+              "conditionId": "mingwen-chapters"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-archive",
+              "labelKey": "mingwen_menu_archive",
+              "conditionId": "mingwen-archive"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-hidden",
+              "labelKey": "mingwen_menu_hidden",
+              "conditionId": "mingwen-hidden"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-log",
+              "labelKey": "mingwen_menu_log",
+              "conditionId": "mingwen-log"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-ledger",
+              "labelKey": "mingwen_menu_ledger",
+              "conditionId": "mingwen-ledger"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-pause",
+              "labelKey": "mingwen_menu_pause",
+              "conditionId": "mingwen-pause"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-title",
+              "labelKey": "mingwen_menu_title",
+              "conditionId": "mingwen-title"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-settings",
+              "labelKey": "mingwen_menu_settings",
+              "conditionId": "mingwen-settings"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-help",
+              "labelKey": "mingwen_menu_help",
+              "conditionId": "mingwen-help"
+            }
+          ]
+        },
+        {
+          "id": "debug",
+          "labelKey": "mingwen_menu_debug",
+          "items": [
+            {
+              "type": "item",
+              "action": "mingwen-debug-overlay",
+              "labelKey": "mingwen_menu_debug_overlay",
+              "checkable": true,
+              "dataset": {
+                "appCheck": "1"
+              },
+              "conditionId": "mingwen-debug-overlay"
+            },
+            {
+              "type": "submenu",
+              "labelKey": "mingwen_menu_jump",
+              "items": [
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-1",
+                  "labelKey": "mingwen_jump_1",
+                  "conditionId": "mingwen-jump-1"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-2",
+                  "labelKey": "mingwen_jump_2",
+                  "conditionId": "mingwen-jump-2"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-3",
+                  "labelKey": "mingwen_jump_3",
+                  "conditionId": "mingwen-jump-3"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-4",
+                  "labelKey": "mingwen_jump_4",
+                  "conditionId": "mingwen-jump-4"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-5",
+                  "labelKey": "mingwen_jump_5",
+                  "conditionId": "mingwen-jump-5"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-6",
+                  "labelKey": "mingwen_jump_6",
+                  "conditionId": "mingwen-jump-6"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-7",
+                  "labelKey": "mingwen_jump_7",
+                  "conditionId": "mingwen-jump-7"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-8",
+                  "labelKey": "mingwen_jump_8",
+                  "conditionId": "mingwen-jump-8"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-9",
+                  "labelKey": "mingwen_jump_9",
+                  "conditionId": "mingwen-jump-9"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-10",
+                  "labelKey": "mingwen_jump_10",
+                  "conditionId": "mingwen-jump-10"
+                },
+                {
+                  "type": "item",
+                  "action": "mingwen-jump-11",
+                  "labelKey": "mingwen_jump_11",
+                  "conditionId": "mingwen-jump-11"
+                }
+              ]
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-new-state",
+              "labelKey": "mingwen_menu_new_state",
+              "conditionId": "mingwen-new-state"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-end-chapter",
+              "labelKey": "mingwen_menu_end_chapter",
+              "conditionId": "mingwen-end-chapter"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-ending",
+              "labelKey": "mingwen_menu_ending",
+              "conditionId": "mingwen-ending"
+            },
+            {
+              "type": "item",
+              "action": "mingwen-skip-all",
+              "labelKey": "mingwen_menu_skip_all",
+              "checkable": true,
+              "dataset": {
+                "appCheck": "1"
+              },
+              "conditionId": "mingwen-skip-all"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "intents": [],
+  "strings": {
+    "en": {
+      "mingwen_status_loading": "Loading the novel…",
+      "mingwen_status_failed": "The novel could not load. Close the window, then open it again.",
+      "mingwen_menu_story": "Story",
+      "mingwen_menu_new": "New Game",
+      "mingwen_menu_continue": "Continue",
+      "mingwen_menu_load": "Load…",
+      "mingwen_menu_save": "Save…",
+      "mingwen_menu_chapters": "Chapter Select",
+      "mingwen_menu_archive": "Archives",
+      "mingwen_menu_log": "Backlog",
+      "mingwen_menu_ledger": "Ledger",
+      "mingwen_menu_hidden": "Hidden Chapter",
+      "mingwen_menu_pause": "Pause",
+      "mingwen_menu_title": "Return to Title",
+      "mingwen_menu_settings": "Settings",
+      "mingwen_menu_help": "Help",
+      "mingwen_menu_debug": "Debug",
+      "mingwen_menu_debug_overlay": "Show Debug Overlay",
+      "mingwen_menu_jump": "Jump to Chapter",
+      "mingwen_jump_1": "Chapter 1",
+      "mingwen_jump_2": "Chapter 2",
+      "mingwen_jump_3": "Chapter 3",
+      "mingwen_jump_4": "Chapter 4",
+      "mingwen_jump_5": "Chapter 5",
+      "mingwen_jump_6": "Chapter 6",
+      "mingwen_jump_7": "Chapter 7",
+      "mingwen_jump_8": "Chapter 8",
+      "mingwen_jump_9": "Chapter 9",
+      "mingwen_jump_10": "Chapter 10",
+      "mingwen_jump_11": "Hidden Chapter",
+      "mingwen_menu_new_state": "New State",
+      "mingwen_menu_end_chapter": "End Chapter",
+      "mingwen_menu_ending": "Judge Ending",
+      "mingwen_menu_skip_all": "Skip All Text"
+    },
+    "zh": {
+      "mingwen_status_loading": "正在装载小说……",
+      "mingwen_status_failed": "小说未能装载，请关闭窗口后重新打开。",
+      "mingwen_menu_story": "故事",
+      "mingwen_menu_new": "开始",
+      "mingwen_menu_continue": "继续",
+      "mingwen_menu_load": "读档…",
+      "mingwen_menu_save": "存档…",
+      "mingwen_menu_chapters": "章节选择",
+      "mingwen_menu_archive": "档案馆",
+      "mingwen_menu_log": "回看日志",
+      "mingwen_menu_ledger": "账簿",
+      "mingwen_menu_hidden": "隐藏章",
+      "mingwen_menu_pause": "暂停",
+      "mingwen_menu_title": "回到标题",
+      "mingwen_menu_settings": "设置",
+      "mingwen_menu_help": "求助信息",
+      "mingwen_menu_debug": "调试",
+      "mingwen_menu_debug_overlay": "显示调试面板",
+      "mingwen_menu_jump": "跳到章节",
+      "mingwen_jump_1": "第1章",
+      "mingwen_jump_2": "第2章",
+      "mingwen_jump_3": "第3章",
+      "mingwen_jump_4": "第4章",
+      "mingwen_jump_5": "第5章",
+      "mingwen_jump_6": "第6章",
+      "mingwen_jump_7": "第7章",
+      "mingwen_jump_8": "第8章",
+      "mingwen_jump_9": "第9章",
+      "mingwen_jump_10": "第10章",
+      "mingwen_jump_11": "隐藏章",
+      "mingwen_menu_new_state": "新状态",
+      "mingwen_menu_end_chapter": "结束本章",
+      "mingwen_menu_ending": "判定结局",
+      "mingwen_menu_skip_all": "快进全部"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "plaintext",
+  "version": "1.0.0",
+  "private": true,
+  "description": "明文 Plaintext — a browser visual novel about saying it plainly and passing it on.",
+  "scripts": {
+    "build": "bash tools/build_dist.sh dist",
+    "start": "python3 -m http.server 8080"
+  }
+}
