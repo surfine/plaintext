@@ -4,6 +4,12 @@ A visual novel that runs in a browser: a letter-writer and a chart-maker, and
 the difference between saying a thing plainly and passing it on. The text is
 in Simplified Chinese. It is a work of fiction.
 
+## Screenshots
+
+Captured running inside the AI System 6 desk: Classic on the left, Liquid Glass on the right.
+
+<p><img src="screenshots/mingwen-classic.png" width="49%" alt="Plaintext · Classic"> <img src="screenshots/mingwen-liquid-glass.png" width="49%" alt="Plaintext · Liquid Glass"></p>
+
 ## Play
 
 Any static file server will do; nothing is installed and nothing is fetched

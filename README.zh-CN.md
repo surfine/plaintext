@@ -2,6 +2,12 @@
 
 一部在浏览器里运行的视觉小说：代笔人与海图师，讲的是直说与传话的差别。正文为简体中文。本作纯属虚构。
 
+## 截图
+
+在 AI System 6 桌面里实际运行时截取，左为 Classic，右为 Liquid Glass。
+
+<p><img src="screenshots/mingwen-classic.png" width="49%" alt="明文 · Classic"> <img src="screenshots/mingwen-liquid-glass.png" width="49%" alt="明文 · Liquid Glass"></p>
+
 ## 游玩
 
 任何静态文件服务器都可以；不需要安装，也不从别处加载东西。
